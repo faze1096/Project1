@@ -47,20 +47,22 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the local machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump-Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 IP Address: 47.149.144.56
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by Jump-Box Provisionser.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-
+* Jump Box Provisioner
+* 10.1.0.4
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+| Jump Box | Yes                 |  47.149.144.56       |
+| ElkServer|                     |                      |
+| Webpage-1|                     |                      |
+| Webpage-2|                     |                      |
+| Webpage-3|                     |                      |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
@@ -68,8 +70,13 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- * Install docker.io
+- * Install python3-pip
+- * Install Docker module
+- * Increase virtual memory
+- * Use more memory
+- * Download and launch a docker elk container
+- * Enable service docker on boot 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
