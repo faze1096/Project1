@@ -2,9 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram] 
-
 [Images/Project 1.drawio.png](https://github.com/faze1096/Project1/blob/f0c24c8941659f6c7d45685bb9783d93f7b752f4/Images/Project1.drawio.png)
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   [Playbooks/install-elk.yml](https://github.com/faze1096/Project1/blob/6faf7c55921eda4daf232404555c48204d159c06/Playbooks/install-elk.yml)
@@ -38,16 +37,16 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
+| Webpage-1|Web Server| 10.1.0.9   | Linux            |
+| Webpage-2|Web Server| 10.1.0.10  | Linux            |
+| Webpage-3|Web Server| 10.1.0.11  | Linux            |
+| ElkServer|Elk Stack | 10.2.0.4   | Linux            |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the local machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+IP Address: 47.149.144.56
 
 Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
