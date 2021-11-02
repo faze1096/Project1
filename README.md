@@ -27,8 +27,9 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 * What is the advantage of a jump box? 
   * Jumpbox has many different advantages such as having the ability to manager other systems securely and it is acted as a bridge between two trusted networks keeping both secure. 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-Filebeat watches for 
-- _TODO: What does Filebeat watch for?_
+ 
+* What does Filebeat watch for?
+  * Filebeat watches for  
 Filebeat monitors the log files and locations that you specify and forwards them to Elasticsearch and Logstash for indexing. 
 - _TODO: What does Metricbeat record?_
 Metricbeat records 
