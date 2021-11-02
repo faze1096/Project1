@@ -21,9 +21,11 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly redundant, in addition to restricting traffic to the network.
-* It protects attacks against DDoS attacks, protect applications from emerging threats, authenticates user access, and simplifies PCI compliance. 
-* Jumpbox has many different advantages such as having the ability to manager other systems securely and it is acted as a bridge between two trusted networks keeping both secure. 
+*Load balancing ensures that the application will be highly redundant, in addition to restricting traffic to the network.
+* What aspect of security do load balancers protect?
+  * It protects attacks against DDoS attacks, protect applications from emerging threats, authenticates user access, and simplifies PCI compliance. 
+* What is the advantage of a jump box? 
+  * Jumpbox has many different advantages such as having the ability to manager other systems securely and it is acted as a bridge between two trusted networks keeping both secure. 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 Filebeat watches for 
 - _TODO: What does Filebeat watch for?_
@@ -33,13 +35,13 @@ Metricbeat records
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| Webpage-1|Web Server| 10.1.0.9   | Linux            |
-| Webpage-2|Web Server| 10.1.0.10  | Linux            |
-| Webpage-3|Web Server| 10.1.0.11  | Linux            |
-| ElkServer|Elk Stack | 10.2.0.4   | Linux            |
+| Name     | Function | IP Address                             | Operating System |
+|----------|----------|----------------------------------------|------------------|
+| Jump Box | Gateway  | 10.0.0.1(Private)/20.106.161.24(Public)| Linux            |
+| Webpage-1|Web Server| 10.1.0.9(Private)                      | Linux            |
+| Webpage-2|Web Server| 10.1.0.10(Private)                     | Linux            |
+| Webpage-3|Web Server| 10.1.0.11(Private)                     | Linux           |
+| ElkServer|Elk Stack | 10.2.0.4(Private)/52.165.170.66(Public)| Linux            |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
