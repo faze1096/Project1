@@ -31,8 +31,8 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 * What does Filebeat watch for?
   * Filebeat watches for  
 Filebeat monitors the log files and locations that you specify and forwards them to Elasticsearch and Logstash for indexing. 
-- _TODO: What does Metricbeat record?_
-Metricbeat records 
+* What does Metricbeat record?_
+  * Metricbeat records 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
@@ -41,7 +41,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Gateway  | 10.0.0.1(Private)/20.106.161.24(Public)| Linux            |
 | Webpage-1|Web Server| 10.1.0.9(Private)                      | Linux            |
 | Webpage-2|Web Server| 10.1.0.10(Private)                     | Linux            |
-| Webpage-3|Web Server| 10.1.0.11(Private)                     | Linux           |
+| Webpage-3|Web Server| 10.1.0.11(Private)                     | Linux            |
 | ElkServer|Elk Stack | 10.2.0.4(Private)/52.165.170.66(Public)| Linux            |
 ### Access Policies
 
@@ -58,11 +58,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 |  47.149.144.56       |
-| ElkServer|                     |                      |
-| Webpage-1|                     |                      |
-| Webpage-2|                     |                      |
-| Webpage-3|                     |                      |
+| Jump Box |       Yes           |  47.149.144.56       |
+| ElkServer|       No            |  10.1.0.4            |
+| Webpage-1|       No            |  10.1.0.4            |
+| Webpage-2|       No            |  10.1.0.4            |
+| Webpage-3|       No            |  10.1.0.4            |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
