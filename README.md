@@ -69,7 +69,10 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 * What is the main advantage of automating configuration with Ansible?_
-  * 
+  * Very simple to set up and use
+  * Its very flexible, you can create the entire application environment no matter where it is deployed
+  * Efficient
+  
 The playbook implements the following tasks:
 * Installs docker.io
 * Installs python3-pip
@@ -94,9 +97,9 @@ We have installed the following Beats on these machines:
 * Metricbeats
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-* Filebeat collects 
-* Metricbeat collects
+  * Filebeat collects and monitors the Elasticsearch log files, collect log events, and ships them to the monitoring clusters.
+  * Metricbeat collects metrics from the operating system and from services running on the server. 
+   
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
@@ -108,8 +111,7 @@ SSH into the control node and follow the steps below:
 - Copy the metricbeat-configuration.yml file to /etc/ansible
 - Update the metricbeat-configuration.yml file to include the Elk Server's Private IP(10.2.0.4) in lines 62 and 95.
 - Run the playbook, and navigate to http://52.165.170.66:5601/
-- 
-_TODO: Answer the following questions to fill in the blanks:_
+
 Filebeat and Metricbeat:
 * Which file is the playbook?
   * filebeat-playbook.yml and metricbeat-playbook.yml
