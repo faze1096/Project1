@@ -111,18 +111,18 @@ SSH into the control node and follow the steps below:
 - 
 _TODO: Answer the following questions to fill in the blanks:_
 Filebeat and Metricbeat:
-- _Which file is the playbook?
+* Which file is the playbook?
   * filebeat-playbook.yml and metricbeat-playbook.yml
--  Where do you copy it?_
+* Where do you copy it?
   * /etc/ansible/roles
-- _Which file do you update to make Ansible run the playbook on a specific machine?
+* Which file do you update to make Ansible run the playbook on a specific machine?
   * /etc/ansible/hosts
--  How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
--  * I specified in the /etc/ansible/hosts file. One group is "webservers" which has the VMs that I installed Filebeat on. The other group is "Elk" which will have the Elk Server VM IP address that will have the ELK installed. 
-- _Which URL do you navigate to in order to check that the ELK server is running?
-* http://52.165.170.66:5601/
+* How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+  * I specified in the /etc/ansible/hosts file. One group is "webservers" which has the VMs that I installed Filebeat on. The other group is "Elk" which will have the Elk Server VM IP address that will have the ELK installed. 
+* Which URL do you navigate to in order to check that the ELK server is running?
+  * http://52.165.170.66:5601/
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+##Bonus
 
 Filebeat:
 -To create the filebeat-configuration.yml file, run, and then nano the filebeat-config.yml : curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml 
