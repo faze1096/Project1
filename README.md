@@ -68,8 +68,8 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
-
+* What is the main advantage of automating configuration with Ansible?_
+  * 
 The playbook implements the following tasks:
 * Installs docker.io
 * Installs python3-pip
