@@ -32,9 +32,9 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
   * Filebeat watches for  
 Filebeat monitors the log files and locations that you specify and forwards them to Elasticsearch and Logstash for indexing. 
 * What does Metricbeat record?_
-  * Metricbeat records 
+  * Metricbeat is used to monitor and collect data such as system CPU, memory and load in a docker environment
+ 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address                             | Operating System |
 |----------|----------|----------------------------------------|------------------|
@@ -51,9 +51,11 @@ Only the Jump-Box Provisioner machine can accept connections from the Internet. 
 IP Address: 47.149.144.56
 
 Machines within the network can only be accessed by Jump-Box Provisionser.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-* Jump Box Provisioner
-* 10.1.0.4
+* Which machine did you allow to access your ELK VM? 
+  * Jump Box Provisioner
+* What was its IP address?
+  * 10.1.0.4
+
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
