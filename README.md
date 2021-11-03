@@ -71,14 +71,13 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _TODO: What is the main advantage of automating configuration with Ansible?_
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- * Install docker.io
-- * Install python3-pip
-- * Install Docker module
-- * Increase virtual memory
-- * Use more memory
-- * Download and launch a docker elk container
-- * Enable service docker on boot 
+* Installs docker.io
+* Installs python3-pip
+* Installs Docker module
+* Increases virtual memory
+* Uses more memory
+* Downloads and launches a docker elk container
+* Enables service docker on boot 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -86,12 +85,14 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
-web 1-3 + internal ip
+* Webpage-1: 10.1.0.9
+* Webpage-2: 10.1.0.10
+* Webpage-3: 10.1.0.11
+
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
 * Filebeats
 * Metricbeats
+
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 * Filebeat collects 
